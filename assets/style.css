@@ -1,0 +1,124 @@
+body,
+html {
+    animation: city 30s linear infinite;
+    background: url(../img/city.png) repeat-x 0 100% fixed,
+    /*linear-gradient(to top, #5080b1, #3A6DA2, #245D99, #004e8c) fixed;*/
+    linear-gradient(to top, #7abcff 0%, #60abf8 44%, #4096ee 100%) fixed;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.text {
+    color: #fff;
+    padding: 10%;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+}
+
+a {
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.map-frame {
+	width: 800px;
+	height: 50vh;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.map-frame iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: relative;
+	top: -50px;
+}
+
+.callback {
+    align-items: center;
+    background: #0465C8;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
+
+.callback>button {
+    transform: rotate(270deg);
+    font-size: 1em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+
+.powerclip {
+    display: block;
+    margin: 30px auto 0;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7px 21px;
+    text-align: center;
+    line-height: 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0465C8;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+
+.my-button {
+    margin: 20px auto 0;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7px 21px;
+    border-color: #0465C8;
+    background-color: transparent;
+}
+
+
+
+
+
+/*Animated background*/
+
+@keyframes city {
+    from {
+        background-position: -1000px 100%, 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}

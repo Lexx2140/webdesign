@@ -1,0 +1,54 @@
+.my-form {
+    align-content: center;
+    background: #fff;
+    left: -27em;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25em;
+    transition: all ease .5s;
+}
+
+.my-form-vis {
+    left: 0;
+    transition: all ease 1s;
+}
+
+.row {
+    margin: 15px auto;
+    width: 80%;
+}
+
+.row input {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+.form-toggle {
+    background: #0465C8;
+    border-radius: 0 0 10px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    color: #fff;
+    height: 50px;
+    position: absolute;
+    right: -99px;
+    top: 50px;
+    transform: rotate(270deg);
+    transition: all ease .5s;
+    width: 150px;
+    font-size: 1.3em;
+}
+
+.form-toggle:hover {
+    background: #1F72C6;
+    cursor: pointer;
+}
+
+.submit {
+    margin: 10px auto;
+    /*text-align: center*/
+}

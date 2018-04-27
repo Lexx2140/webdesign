@@ -1,0 +1,28 @@
+.mm {
+    position: relative;
+    z-index: 0;
+}
+
+/*from left corner*/
+.mm::after {
+		background: linear-gradient(to right, #7abcff 0%, #0465C8 100%);
+    content: '';
+    height: 400%;
+    top: -50px;
+    /*height: 0;*/
+    left: -23px;
+    position: absolute;
+    transform: translateY(0%) rotate(-29deg);
+   /* transition: all .5s;*/
+   	transition: all 1.0s;
+    width: 0;
+    /*width: 100%;*/
+    z-index: -1;
+}
+
+
+
+.mm:hover::after {
+    height: 600%;
+    width: 115%;
+}
